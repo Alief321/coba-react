@@ -1,22 +1,11 @@
 import React from 'react';
-import Analyst from './component/analyst';
-import Card from './component/card';
-import Footer from './component/footer';
-import Hero from './component/hiro';
-import Navbar from './component/navbar';
-import Newsletter from './component/newsletter';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App.js';
 
-function App() {
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Analyst />
-      <Newsletter />
-      <Card />
-      <Footer />
-    </div>
-  );
-}
-
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
